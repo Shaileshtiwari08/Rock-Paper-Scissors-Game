@@ -1,0 +1,180 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  background-color: rgb(233, 233, 213);
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  background-color: #081b31;
+  color: white;
+  height: 5rem;
+  line-height: 5rem;
+}
+
+/* Choices */
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 5rem;
+  flex-wrap: wrap;   /* ✅ line break on smaller screens */
+}
+
+.choice {
+  height: 165px;
+  width: 165px;
+  transition: transform 0.3s, opacity 0.3s;
+}
+
+.choice:hover {
+  opacity: 0.7;
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.choice img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #081b31;
+}
+
+.choice p {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/* Scoreboard */
+.score-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  gap: 5rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;   /* ✅ better on small screens */
+}
+
+.score {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#user-score,
+#computer-score {
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+/* Message */
+.msg-container {
+  margin-top: 2rem;
+}
+
+#msg {
+  background-color: #081b31;
+  color: #fff;
+  font-size: 2rem;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+/* Reset button */
+#reset-btn {
+  margin-top: 2rem;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #081b31;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#reset-btn:hover {
+  background-color: #0b2e57;
+}
+
+/* ✅ Responsive Design */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .choices {
+    gap: 2rem;
+    margin-top: 3rem;
+  }
+
+  .choice {
+    height: 140px;
+    width: 140px;
+  }
+
+  .choice img {
+    height: 130px;
+    width: 130px;
+  }
+
+  #msg {
+    font-size: 1.6rem;
+    padding: 0.8rem 1.5rem;
+  }
+}
+
+/* Mobiles */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+    height: auto;
+    line-height: normal;
+    padding: 1rem;
+  }
+
+  .choices {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .choice {
+    height: 120px;
+    width: 120px;
+  }
+
+  .choice img {
+    height: 110px;
+    width: 110px;
+  }
+
+  .score-board {
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  #user-score,
+  #computer-score {
+    font-size: 3rem;
+  }
+
+  #msg {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+  }
+
+  #reset-btn {
+    font-size: 1rem;
+    padding: 8px 16px;
+  }
+}
