@@ -25,7 +25,7 @@ h1 {
   align-items: center;
   gap: 3rem;
   margin-top: 5rem;
-  flex-wrap: wrap;   /* ✅ line break on smaller screens */
+  flex-wrap: wrap;   /*  line break on smaller screens */
 }
 
 .choice {
@@ -61,7 +61,7 @@ h1 {
   font-size: 2rem;
   gap: 5rem;
   margin-top: 3rem;
-  flex-wrap: wrap;   /* ✅ better on small screens */
+  flex-wrap: wrap;   /* better on small screens */
 }
 
 .score {
@@ -108,7 +108,7 @@ h1 {
   background-color: #0b2e57;
 }
 
-/* ✅ Responsive Design */
+/*  Responsive Design */
 
 /* Tablets */
 @media (max-width: 992px) {
@@ -178,3 +178,4 @@ h1 {
     padding: 8px 16px;
   }
 }
+
